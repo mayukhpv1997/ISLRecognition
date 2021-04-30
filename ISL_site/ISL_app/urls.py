@@ -18,9 +18,19 @@ from .views import *
 
 
 urlpatterns = [
-    #path('/home', home ,name='home'),
-    path('/k', camera, name="camera"),
-    path('',index,name="index" ),
-    path('',inner,name='inner-page')
-]
+    # path('/home', home ,name='home'),
+    path('k/', camera, name="camera"),
+    path('', index, name="index"),
+    path('signin/index', index, name="index"),
+    path('signup/index', index, name="index"),
+    path('signin/', signin , name="signin"),
+    path('signup/', signup , name="signup"),
+    path('signin/signin', signin , name="signin"),
+    path('signup/signup', signup , name="signup"),
+    path('signin/signup', signup , name="signup"),
+    path('signup/signin', log , name="log"),
+    path('log/', log , name='log'),
+    path('findhand/', findhand ,  name="findhand"),
+    path('sample', sample ,  name="sample")
 
+            ]
