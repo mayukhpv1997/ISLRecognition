@@ -23,7 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- /css -->
 </head>
 <body>
-<h1 class="w3ls"> Signin </h1>
+<h1 class="w3ls"> Sign in </h1>
 <div class="content-w3ls">
 	<div class="content-agile1">
 		<!--<h2 class="agileits1">signup</h2>
@@ -32,11 +32,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="content-agile2">
 		<form  action="log" method="post">
 			{% csrf_token %}
-			<h2 style="color:white;">{{msg}}</h2>
+			<h1 style="color:white;"><center>{{msg}}</center></h1>
 
-			<!--<div class="form-control w3layouts">
-				<input type="email" id="email" name="email" placeholder="mail@example.com" title="Please enter a valid email" required="">
-			</div>-->
 			<div class="form-control w3layouts">
 				<input type="email" id="email" name="email" placeholder="mail@example.com" title="Please enter a valid email" required="">
 			</div>
@@ -52,22 +49,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</form>
 		<center><h3 allign="center" style="color:white;">Don't have an account?</h3></center>
 		<a href="signup" ><input type="button" class="register" value="Register now"></a>
-		<a href="index" ><input type="button" class="register" value="home"></a>
-		<!--<script type="text/javascript">
-			window.onload = function () {
-				document.getElementById("password1").onchange = validatePassword;
-				document.getElementById("password2").onchange = validatePassword;
-			}
-			function validatePassword(){
-				var pass2=document.getElementById("password2").value;
-				var pass1=document.getElementById("password1").value;
-				if(pass1!=pass2)
-					document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-				else
-					document.getElementById("password2").setCustomValidity('');	 
-					//empty string means no validation error
-			}
-		</script>-->
+		<!--<a href="index" ><input type="button" class="register" value="home"></a>-->
 		<p class="wthree w3l">Fast Signup With Your Favourite Social Profile</p>
 		<ul class="social-agileinfo wthree2">
 			<li><a href="#"><i class="fa fa-facebook"></i></a></li>

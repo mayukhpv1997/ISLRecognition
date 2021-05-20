@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Arsha Bootstrap Template - Index</title>
+  <title>Indian sign language interpreter</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -78,7 +78,7 @@
       </nav><!-- .nav-menu -->
 
       <a href="signup" class="get-started-btn scrollto">Sign up</a>
-
+      <h5 style="color:white;">{{msg}}</h5>
     </div>
   </header><!-- End Header -->
 
@@ -90,66 +90,58 @@
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>   Lets try Indian sign-language interpreter </h1>
           <marquee direction="left" behavior="scroll"  scrolldelay="8" left><h2> New way of understanding sign language</h2></marquee>
-          <div class="d-lg-flex">
+          <div class="d-lg-flex" >
+            <div class="row">
             <a href="signin" class="btn-get-started scrollto">Signin</a>
-            <a href="k" class="btn-get-started scrollto">Try Now</a>
+            <a href="k" class="btn-get-started scrollto">Try camera</a>
             <a href="findhand" class="btn-get-started scrollto">Try Now</a>
-
+            </div>
             <a href="https://youtu.be/utBoIhiLPIQ" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
          <!--<img src="{% static 'assets/img/isl.png' %}" width="350" height="200" class="img-fluid animated" alt="">-->
-         <img src="{% static 'assets/img/happy.JPG' %}" width="800" height="600" class="img-fluid animated" alt="">
+         <img src="{% static 'assets/img/kidsign.jpeg' %}" width="800" height="500" class="img-fluid animated" alt="">
         </div>
       </div>
 
     </div>
 
 
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
+
 
   <main id="main">
 
     <!-- ======= Cliens Section ======= -->
     <section id="cliens" class="cliens section-bg">
-      <div class="container">
-        <img src="{% static 'assets/img/kidsign.JPEG' %}" width="900" height="300">
-        <img src="{% static 'assets/img/ISL-teaching.JPEG' %}" width="900" height="300">
-        <img src="{% static 'assets/img/kid2.JPG' %}" width="900" height="300">
-        <img src="{% static 'assets/img/sign.JPG' %}" width="900" height="300">
-
-
-        <!--<div class="row" data-aos="zoom-in">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt="">
-          </div>
-
-        </div>-->
-
+        <div class="section-title" >
+          <h2>video call  </h2>
+        </div>
+        <div >
+          <img src="{% static 'assets/img/mobile.png' %}" width="280" height="430">
+          <img src="{% static 'assets/img/call.png' %}" width="200" height="200" class="img-fluid animated">
+          <img src="{% static 'assets/img/mobile2.png' %}" width="280" height="430">
+        </div>
       </div>
-    </section><!-- End Cliens Section -->
+    </section>
+    <!-- End Cliens Section -->
+
+     <!--marquee photoes-->
+    <section id="about1" class="about">
+      <div class="container" data-aos="fade-up">
+        <marquee direction="left" behavior="alternate"   loop="" scrollamount="12" white-space="nowrap" overflow="hidden">
+          <div class="row1">
+          <img src="{% static 'assets/img/sign.jpg' %}" width="600" height="350">
+          <img src="{% static 'assets/img/kidsign.jpeg' %}" width="600" height="350">
+          <img src="{% static 'assets/img/ISL-teaching.jpeg' %}" width="600" height=350">
+          <img src="{% static 'assets/img/kid2.jpg' %}" width="600" height=350">
+        </div>
+        </marquee>
+      </div>
+    </section>
+    <!--marquee photoes end-->
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -158,31 +150,31 @@
         <div class="section-title">
           <h2>About Us</h2>
         </div>
-        <center>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-        <center><img src="{% static 'assets/img/portfolio/isl.png' %}" height="600" width="700" class="img-fluid animated"></center>
+            <marquee behavior="alternate">
+            <img src="{% static 'assets/img/portfolio/isl.png' %}" height="200" width="350" class="img-fluid animated">
+            </marquee>
         </div>
-        </center>
+        </div>
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
+    </section>
+    <!-- End About Us Section -->
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
       <div class="container-fluid" data-aos="fade-up">
 
-        <div class="row">
+        <div class="row" >
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
             <div class="content">
               <h3> <strong>make communication simple</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                unt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
               </p>
             </div>
-
             <div class="accordion-list">
               <ul>
                 <li>
@@ -214,13 +206,12 @@
 
               </ul>
             </div>
-
           </div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img aos-init aos-animate" style="background-image: url("{% static 'assets/img/kids.jpg' %}");" data-aos="zoom-in" data-aos-delay="150"></div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-               style='background-image: url("{% static 'assets/img/chat.JPG' %}"); '
-          data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
+      </div>
+
 
 
       </div>
@@ -232,13 +223,13 @@
 
         <div class="row">
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="{% static 'assets/img/happy.JPG' %}" class="img-fluid" alt="">
+            <img src="{% static 'assets/img/why-us.png' %}" class="img-fluid" alt="">
+
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+            <h3>languages and frameworks used</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+             below  the bargraph shows the percentage of languages used in this project
             </p>
 
             <div class="skills-content">
@@ -266,7 +257,7 @@
               <div class="progress">
                 <span class="skill">python <i class="val">90%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
@@ -284,46 +275,47 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p></p>
         </div>
 
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <!--<div class="icon"><i class="bx bxl-dribbble"></i></div>-->
+              <h4><a href="">Sign language recognition</a></h4>
+              <p></p>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <!--<div class="icon"><i class="bx bx-file"></i></div>-->
+              <h4><a href="">text to speech output</a></h4>
+              <p></p>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <!--<div class="icon"><i class="bx bx-tachometer"></i></div>-->
+              <h4><a href="">video calling with this interpretter</a></h4>
+              <p></p>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <!--<div class="icon"><i class="bx bx-layer"></i></div>-->
+              <h4><a href="">chat</a></h4>
+              <p></p>
             </div>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    <!-- End Services Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -343,7 +335,7 @@
     </section><!-- End Cta Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!--<section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -361,11 +353,11 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-10.jpg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>App 1</h4>
               <p>App</p>
-              <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" data-gall="portfolioGallery' %}" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{% static 'assets/img/portfolio/portfolio-10.jpg' %}" data-gall="portfolioGallery' %}" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="{% static 'portfolio-details.html' %}" class="details-link" title="More Details' %}"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -453,7 +445,7 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
@@ -461,16 +453,16 @@
 
         <div class="section-title">
           <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>our team members</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="{% static 'assets/img/team/mayukh1.jpeg' %}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
+                <h4>Mayukh</h4>
                 <span>Chief Executive Officer</span>
                 <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                 <div class="social">
@@ -553,7 +545,7 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
               <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span>per month</span></h4>
+              <h4><sup>$  </sup>0<span>per month</span></h4>
               <ul>
                 <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
                 <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
@@ -638,24 +630,6 @@
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
-                <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
-                <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                </p>
-              </div>
-            </li>
-
           </ul>
         </div>
 
@@ -668,7 +642,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>your valuable feedback are accepted here</p>
         </div>
 
         <div class="row">
@@ -678,13 +652,13 @@
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Kochi,Eranakulam,Kerala</p>
               </div>
 
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>islr@eg.com</p>
               </div>
 
               <div class="phone">
@@ -699,7 +673,9 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="feedback/" method="post" role="form" class="php-email-form">
+              {% csrf_token %}
+              {{msg}}
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -760,11 +736,11 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
+            <h3>ISLR</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
+              Kochi<br>
+             Ernakulam,kerala<br>
+              India<br><br>
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
@@ -810,7 +786,7 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>ISLR</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->

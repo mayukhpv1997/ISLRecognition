@@ -7,6 +7,13 @@ class Signup(models.Model):
     password = models.CharField(max_length=30)
     confirmpassword = models.CharField(max_length=30)
 
+class Feedback(models.Model):
+    name = models.CharField(max_length=20)
+    email = models.CharField(max_length=30)
+    subject = models.CharField(max_length=50)
+    message = models.CharField(max_length=200)
+
+
 
 
 

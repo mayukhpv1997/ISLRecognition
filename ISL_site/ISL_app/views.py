@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import *
 from .signup import *
 from .models import Signup
+from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.contrib.auth import get_user_model
 
@@ -21,7 +22,7 @@ def signin(request):
 def inner(request):
     return render(request, "inner-page.html")
 def findhand(request):
-    return render(request, "findhand.py")
+       return request(request, "findhand.py")
 
 def signup(request):
     if request.method == 'POST':
@@ -49,11 +50,29 @@ def log(request):
         #sign = Signup
         if Signup.objects.filter(email=email , password=password).exists():
             #return render(request,'signin.html', {'msg' : 'successfull'})
-            return render(request, 'index.html', {'msg': 'successfull'})
+            return render(request, 'index.html', {'msg': 'logined successfully '})
         else:
             return render(request, 'signin.html', {'msg' : 'invalid credential'})
     else:
         return render(request, 'signin.html', )
+
+def feedback(request):
+    if request.method == 'POST' :
+        var = Feedback(request.POST)
+        if var.is_valid():
+            name = var.cleaned_data['name']
+            email = var.cleaned_data['email']
+            subject = var.cleaned_data['subject']
+            message = var.cleand_data['message']
+            g = Feedback(name= name ,email=email,subject=subject,message=message)
+            g.save()
+            return render(request,'index.html',{'msg':'succesfull'})
+        else:
+            return render(request,'index.html',{'msg':' submission failed'})
+    else:
+        return render(request, 'index.html', {'msg': ' submission failed'})
+
+
 
 
 

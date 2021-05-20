@@ -29,8 +29,10 @@ urlpatterns = [
     path('signup/signup', signup , name="signup"),
     path('signin/signup', signup , name="signup"),
     path('signup/signin', log , name="log"),
+    path('signin/log', log , name="log"),
+    path('signup/log', log , name="log"),
     path('log/', log , name='log'),
+    path('feedback/',index , name='index'),
     path('findhand/', findhand ,  name="findhand"),
     path('sample', sample ,  name="sample")
-
             ]
