@@ -25,7 +25,9 @@ SECRET_KEY = 'm9hf8(!(5-*pwmu!ecg*&*w2fm0nm%9win!6$u0dyl^4%i!l38'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#my wifi
+#ALLOWED_HOSTS = ['192.168.43.25']
+AOOLWED_HOSTS = ['']
 
 
 # Application definition

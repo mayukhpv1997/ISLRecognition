@@ -32,7 +32,9 @@ urlpatterns = [
     path('signin/log', log , name="log"),
     path('signup/log', log , name="log"),
     path('log/', log , name='log'),
+    path('log/index2', log , name='log'),
     path('feedback/',index , name='index'),
     path('findhand/', findhand ,  name="findhand"),
+    path('dash/', dash, name="dash"),
     path('sample', sample ,  name="sample")
             ]
